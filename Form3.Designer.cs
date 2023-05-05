@@ -429,6 +429,7 @@
             button1.TabIndex = 30;
             button1.Text = "Update Inventory";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // button2
             // 

@@ -109,6 +109,8 @@ namespace Assignment_ES
             button2.Hide();
 
 
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -165,6 +167,63 @@ namespace Assignment_ES
                         cmd.Parameters.AddWithValue("@product_code", product_code);
                         cmd.Parameters.AddWithValue("@manufacturer", manufacturer);
                         cmd.Parameters.AddWithValue("@name", name);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Record added successfully");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Record not added");
+                        }
+                    }
+
+                    mySqlConnection.Close();
+                }
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string mysqlCon = "server=127.0.0.1; user=root; database=sunethra_pharmacy; password=";
+            try
+            {
+                MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon);
+
+                string date = textBox4.Text.ToString();
+                DateTime dt = DateTime.ParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+                string product_code = textBox1.Text.ToString();
+                string exDate = textBox2.Text.ToString();
+                DateTime d = DateTime.ParseExact(exDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+                string unitCost = textBox3.Text.ToString();
+                string sellingPrice= textBox5.Text.ToString();
+                string quantity= textBox6.Text.ToString();
+                if (date.Length == 0 || product_code.Length == 0 || exDate.Length == 0 || unitCost.Length == 0 || sellingPrice.Length == 0|| quantity.Length == 0)
+                {
+                    MessageBox.Show("No empty feilds allowed");
+                }
+                else
+                {
+
+                    mySqlConnection.Open();
+                    string query = "INSERT INTO stocks (product_code, exp_date, unit_cost, selling_price, quantity, update_date) VALUES (@product_code, @exDate, @unitCost, @sellingPrice, @quantity, @date)";
+                    using (MySqlCommand cmd = new MySqlCommand(query, mySqlConnection))
+                    {
+                        
+                        cmd.Parameters.AddWithValue("@product_code", product_code);
+                        cmd.Parameters.AddWithValue("@exDate", exDate);
+                        cmd.Parameters.AddWithValue("@unitCost", unitCost);
+                        cmd.Parameters.AddWithValue("@sellingPrice", sellingPrice);
+                        cmd.Parameters.AddWithValue("@quantity", quantity);
+                        cmd.Parameters.AddWithValue("@date", dt);
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
