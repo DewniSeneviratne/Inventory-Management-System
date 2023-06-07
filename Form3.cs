@@ -81,6 +81,7 @@ namespace Assignment_ES
             button2.Hide();
             textBox2.Show();
             textBox3.Show();
+            label2.Text = "Date";
 
 
         }
@@ -103,7 +104,7 @@ namespace Assignment_ES
             label7.Show();
             textBox2.Show();
             textBox3.Show();
-
+            label2.Text = "Date";
             button4.Hide();
             button1.Show();
             button2.Hide();
@@ -132,6 +133,7 @@ namespace Assignment_ES
             button4.Hide();
             button1.Hide();
             button2.Show();
+            label2.Text = "Product Name";
 
         }
 
@@ -204,9 +206,9 @@ namespace Assignment_ES
                 string exDate = textBox2.Text.ToString();
                 DateTime d = DateTime.ParseExact(exDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
                 string unitCost = textBox3.Text.ToString();
-                string sellingPrice= textBox5.Text.ToString();
-                string quantity= textBox6.Text.ToString();
-                if (date.Length == 0 || product_code.Length == 0 || exDate.Length == 0 || unitCost.Length == 0 || sellingPrice.Length == 0|| quantity.Length == 0)
+                string sellingPrice = textBox5.Text.ToString();
+                string quantity = textBox6.Text.ToString();
+                if (date.Length == 0 || product_code.Length == 0 || exDate.Length == 0 || unitCost.Length == 0 || sellingPrice.Length == 0 || quantity.Length == 0)
                 {
                     MessageBox.Show("No empty feilds allowed");
                 }
@@ -217,7 +219,7 @@ namespace Assignment_ES
                     string query = "INSERT INTO stocks (product_code, exp_date, unit_cost, selling_price, quantity, update_date) VALUES (@product_code, @exDate, @unitCost, @sellingPrice, @quantity, @date)";
                     using (MySqlCommand cmd = new MySqlCommand(query, mySqlConnection))
                     {
-                        
+
                         cmd.Parameters.AddWithValue("@product_code", product_code);
                         cmd.Parameters.AddWithValue("@exDate", exDate);
                         cmd.Parameters.AddWithValue("@unitCost", unitCost);
@@ -246,6 +248,41 @@ namespace Assignment_ES
                 MessageBox.Show(ex.Message);
             }
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            string mysqlCon = "server=127.0.0.1; user=root; database=sunethra_pharmacy; password=";
+            try
+            {
+                MySqlConnection mySqlConnection = new MySqlConnection(mysqlCon);
+
+                string productName = textBox4.Text.ToString();
+                string productCode = textBox1.Text.ToString();
+
+                if (productName.Length == 0 || productCode.Length ==0)
+                {
+                    MessageBox.Show("No empty feilds allowed");
+                }
+                else
+                {
+
+                    mySqlConnection.Open();
+                    string query = "delete from products where product_code="+productCode+"";
+
+                    MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Product Deleted Successfully");
+                    mySqlConnection.Close();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        
         }
     }
 }
