@@ -92,8 +92,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { homeToolStripMenuItem, itemManagementToolStripMenuItem, suppliersToolStripMenuItem, reportsToolStripMenuItem, monitorToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(236, 15, 18, 15);
-            menuStrip1.Size = new Size(1424, 79);
+            menuStrip1.Padding = new Padding(270, 20, 21, 20);
+            menuStrip1.Size = new Size(1627, 95);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -101,7 +101,7 @@
             // 
             homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             homeToolStripMenuItem.Padding = new Padding(30, 10, 30, 10);
-            homeToolStripMenuItem.Size = new Size(126, 49);
+            homeToolStripMenuItem.Size = new Size(139, 55);
             homeToolStripMenuItem.Text = "Home";
             homeToolStripMenuItem.Click += homeToolStripMenuItem_Click;
             // 
@@ -110,34 +110,34 @@
             itemManagementToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aToolStripMenuItem, bToolStripMenuItem, cToolStripMenuItem });
             itemManagementToolStripMenuItem.Name = "itemManagementToolStripMenuItem";
             itemManagementToolStripMenuItem.Padding = new Padding(30, 10, 30, 10);
-            itemManagementToolStripMenuItem.Size = new Size(230, 49);
+            itemManagementToolStripMenuItem.Size = new Size(267, 55);
             itemManagementToolStripMenuItem.Text = "Item Management";
             itemManagementToolStripMenuItem.Click += itemManagementToolStripMenuItem_Click;
             // 
             // aToolStripMenuItem
             // 
             aToolStripMenuItem.Name = "aToolStripMenuItem";
-            aToolStripMenuItem.Size = new Size(150, 30);
+            aToolStripMenuItem.Size = new Size(183, 36);
             aToolStripMenuItem.Text = "Add";
             aToolStripMenuItem.Click += aToolStripMenuItem_Click;
             // 
             // bToolStripMenuItem
             // 
             bToolStripMenuItem.Name = "bToolStripMenuItem";
-            bToolStripMenuItem.Size = new Size(150, 30);
+            bToolStripMenuItem.Size = new Size(183, 36);
             bToolStripMenuItem.Text = "Update";
             // 
             // cToolStripMenuItem
             // 
             cToolStripMenuItem.Name = "cToolStripMenuItem";
-            cToolStripMenuItem.Size = new Size(150, 30);
+            cToolStripMenuItem.Size = new Size(183, 36);
             cToolStripMenuItem.Text = "Remove";
             // 
             // suppliersToolStripMenuItem
             // 
             suppliersToolStripMenuItem.Name = "suppliersToolStripMenuItem";
             suppliersToolStripMenuItem.Padding = new Padding(30, 10, 30, 10);
-            suppliersToolStripMenuItem.Size = new Size(154, 49);
+            suppliersToolStripMenuItem.Size = new Size(173, 55);
             suppliersToolStripMenuItem.Text = "Suppliers";
             // 
             // reportsToolStripMenuItem
@@ -145,25 +145,25 @@
             reportsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { stockReportToolStripMenuItem, deliveryReportToolStripMenuItem, salesReportToolStripMenuItem });
             reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
             reportsToolStripMenuItem.Padding = new Padding(30, 10, 30, 10);
-            reportsToolStripMenuItem.Size = new Size(139, 49);
+            reportsToolStripMenuItem.Size = new Size(156, 55);
             reportsToolStripMenuItem.Text = "Reports";
             // 
             // stockReportToolStripMenuItem
             // 
             stockReportToolStripMenuItem.Name = "stockReportToolStripMenuItem";
-            stockReportToolStripMenuItem.Size = new Size(212, 30);
+            stockReportToolStripMenuItem.Size = new Size(258, 36);
             stockReportToolStripMenuItem.Text = "Stock Report";
             // 
             // deliveryReportToolStripMenuItem
             // 
             deliveryReportToolStripMenuItem.Name = "deliveryReportToolStripMenuItem";
-            deliveryReportToolStripMenuItem.Size = new Size(212, 30);
+            deliveryReportToolStripMenuItem.Size = new Size(258, 36);
             deliveryReportToolStripMenuItem.Text = "Delivery Report";
             // 
             // salesReportToolStripMenuItem
             // 
             salesReportToolStripMenuItem.Name = "salesReportToolStripMenuItem";
-            salesReportToolStripMenuItem.Size = new Size(212, 30);
+            salesReportToolStripMenuItem.Size = new Size(258, 36);
             salesReportToolStripMenuItem.Text = "Sales Report";
             // 
             // monitorToolStripMenuItem
@@ -171,34 +171,34 @@
             monitorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { searchToolStripMenuItem, outOfStockToolStripMenuItem, expiredToolStripMenuItem });
             monitorToolStripMenuItem.Name = "monitorToolStripMenuItem";
             monitorToolStripMenuItem.Padding = new Padding(30, 10, 30, 10);
-            monitorToolStripMenuItem.Size = new Size(144, 49);
+            monitorToolStripMenuItem.Size = new Size(160, 55);
             monitorToolStripMenuItem.Text = "Monitor";
+            monitorToolStripMenuItem.Click += monitorToolStripMenuItem_Click;
             // 
             // searchToolStripMenuItem
             // 
             searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            searchToolStripMenuItem.Size = new Size(185, 30);
+            searchToolStripMenuItem.Size = new Size(225, 36);
             searchToolStripMenuItem.Text = "Search";
             // 
             // outOfStockToolStripMenuItem
             // 
             outOfStockToolStripMenuItem.Name = "outOfStockToolStripMenuItem";
-            outOfStockToolStripMenuItem.Size = new Size(185, 30);
+            outOfStockToolStripMenuItem.Size = new Size(225, 36);
             outOfStockToolStripMenuItem.Text = "Out of stock";
             // 
             // expiredToolStripMenuItem
             // 
             expiredToolStripMenuItem.Name = "expiredToolStripMenuItem";
-            expiredToolStripMenuItem.Size = new Size(185, 30);
+            expiredToolStripMenuItem.Size = new Size(225, 36);
             expiredToolStripMenuItem.Text = "Expired";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1068, 16);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(1221, 21);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(39, 34);
+            pictureBox1.Size = new Size(45, 45);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -207,10 +207,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1146, 16);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(1310, 21);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(39, 34);
+            pictureBox2.Size = new Size(45, 45);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
@@ -219,10 +218,9 @@
             // 
             pictureBox3.BackColor = SystemColors.ButtonFace;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(58, 10);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(66, 13);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(125, 58);
+            pictureBox3.Size = new Size(143, 77);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
@@ -230,10 +228,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(2, -8);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Location = new Point(2, -11);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(463, 434);
+            pictureBox4.Size = new Size(529, 579);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 4;
             pictureBox4.TabStop = false;
@@ -244,9 +241,9 @@
             label1.BackColor = Color.FromArgb(135, 228, 218);
             label1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(127, 116);
+            label1.Location = new Point(145, 155);
             label1.Name = "label1";
-            label1.Size = new Size(119, 47);
+            label1.Size = new Size(150, 60);
             label1.TabIndex = 5;
             label1.Text = "Home";
             // 
@@ -254,10 +251,10 @@
             // 
             label2.BackColor = Color.White;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(214, 224);
+            label2.Location = new Point(245, 299);
             label2.Name = "label2";
-            label2.Padding = new Padding(44, 30, 0, 0);
-            label2.Size = new Size(275, 137);
+            label2.Padding = new Padding(50, 40, 0, 0);
+            label2.Size = new Size(314, 183);
             label2.TabIndex = 6;
             label2.Text = "Total Products\r\n1023";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -269,10 +266,10 @@
             // 
             label3.BackColor = Color.White;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(573, 224);
+            label3.Location = new Point(655, 299);
             label3.Name = "label3";
-            label3.Padding = new Padding(44, 30, 0, 0);
-            label3.Size = new Size(275, 137);
+            label3.Padding = new Padding(50, 40, 0, 0);
+            label3.Size = new Size(314, 183);
             label3.TabIndex = 7;
             label3.Text = "Total Suppliers\r\n10";
             label3.TextAlign = ContentAlignment.TopCenter;
@@ -283,10 +280,10 @@
             // 
             label4.BackColor = Color.White;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(922, 224);
+            label4.Location = new Point(1054, 299);
             label4.Name = "label4";
-            label4.Padding = new Padding(74, 30, 0, 0);
-            label4.Size = new Size(275, 137);
+            label4.Padding = new Padding(85, 40, 0, 0);
+            label4.Size = new Size(314, 183);
             label4.TabIndex = 8;
             label4.Text = "Total Orders\r\n10";
             label4.TextAlign = ContentAlignment.TopCenter;
@@ -297,10 +294,10 @@
             // 
             label5.BackColor = Color.White;
             label5.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(214, 389);
+            label5.Location = new Point(245, 519);
             label5.Name = "label5";
-            label5.Padding = new Padding(89, 30, 0, 0);
-            label5.Size = new Size(275, 137);
+            label5.Padding = new Padding(102, 40, 0, 0);
+            label5.Size = new Size(314, 183);
             label5.TabIndex = 9;
             label5.Text = "Notifications \n3";
             label5.TextAlign = ContentAlignment.TopCenter;
@@ -311,10 +308,10 @@
             // 
             label6.BackColor = Color.White;
             label6.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(573, 389);
+            label6.Location = new Point(655, 519);
             label6.Name = "label6";
-            label6.Padding = new Padding(44, 30, 0, 0);
-            label6.Size = new Size(275, 137);
+            label6.Padding = new Padding(50, 40, 0, 0);
+            label6.Size = new Size(314, 183);
             label6.TabIndex = 10;
             label6.Text = "Out Of Stocks\r\n 2";
             label6.TextAlign = ContentAlignment.TopCenter;
@@ -325,10 +322,10 @@
             // 
             label7.BackColor = Color.White;
             label7.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(922, 389);
+            label7.Location = new Point(1054, 519);
             label7.Name = "label7";
-            label7.Padding = new Padding(44, 30, 0, 0);
-            label7.Size = new Size(275, 137);
+            label7.Padding = new Padding(50, 40, 0, 0);
+            label7.Size = new Size(314, 183);
             label7.TabIndex = 11;
             label7.Text = "Expired Items\r\n10";
             label7.TextAlign = ContentAlignment.TopCenter;
@@ -339,10 +336,10 @@
             // 
             label8.BackColor = Color.White;
             label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(327, 598);
+            label8.Location = new Point(374, 797);
             label8.Name = "label8";
-            label8.Padding = new Padding(0, 0, 0, 15);
-            label8.Size = new Size(214, 115);
+            label8.Padding = new Padding(0, 0, 0, 20);
+            label8.Size = new Size(245, 153);
             label8.TabIndex = 12;
             label8.Text = "Sales Report";
             label8.TextAlign = ContentAlignment.BottomCenter;
@@ -351,10 +348,10 @@
             // 
             label9.BackColor = Color.White;
             label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(578, 598);
+            label9.Location = new Point(661, 797);
             label9.Name = "label9";
-            label9.Padding = new Padding(0, 0, 0, 15);
-            label9.Size = new Size(214, 115);
+            label9.Padding = new Padding(0, 0, 0, 20);
+            label9.Size = new Size(245, 153);
             label9.TabIndex = 13;
             label9.Text = "Recieving Report";
             label9.TextAlign = ContentAlignment.BottomCenter;
@@ -363,10 +360,10 @@
             // 
             label10.BackColor = Color.White;
             label10.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(828, 598);
+            label10.Location = new Point(946, 797);
             label10.Name = "label10";
-            label10.Padding = new Padding(0, 0, 0, 15);
-            label10.Size = new Size(214, 115);
+            label10.Padding = new Padding(0, 0, 0, 20);
+            label10.Size = new Size(245, 153);
             label10.TabIndex = 14;
             label10.Text = "Stock Report";
             label10.TextAlign = ContentAlignment.BottomCenter;
@@ -374,10 +371,9 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(908, 74);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
+            pictureBox5.Location = new Point(1038, 99);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(336, 216);
+            pictureBox5.Size = new Size(384, 288);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 15;
             pictureBox5.TabStop = false;
@@ -386,10 +382,9 @@
             // 
             pictureBox6.BackColor = Color.White;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(214, 281);
-            pictureBox6.Margin = new Padding(3, 2, 3, 2);
+            pictureBox6.Location = new Point(245, 375);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(130, 80);
+            pictureBox6.Size = new Size(149, 107);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 16;
             pictureBox6.TabStop = false;
@@ -397,10 +392,9 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(400, 615);
-            pictureBox7.Margin = new Padding(3, 2, 3, 2);
+            pictureBox7.Location = new Point(457, 820);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(66, 57);
+            pictureBox7.Size = new Size(75, 76);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 17;
             pictureBox7.TabStop = false;
@@ -408,10 +402,9 @@
             // pictureBox8
             // 
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(652, 615);
-            pictureBox8.Margin = new Padding(3, 2, 3, 2);
+            pictureBox8.Location = new Point(745, 820);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(66, 57);
+            pictureBox8.Size = new Size(75, 76);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 18;
             pictureBox8.TabStop = false;
@@ -419,10 +412,9 @@
             // pictureBox9
             // 
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(908, 615);
-            pictureBox9.Margin = new Padding(3, 2, 3, 2);
+            pictureBox9.Location = new Point(1038, 820);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(66, 57);
+            pictureBox9.Size = new Size(75, 76);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 19;
             pictureBox9.TabStop = false;
@@ -431,10 +423,9 @@
             // 
             pictureBox10.BackColor = Color.White;
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(573, 281);
-            pictureBox10.Margin = new Padding(3, 2, 3, 2);
+            pictureBox10.Location = new Point(655, 375);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(122, 80);
+            pictureBox10.Size = new Size(139, 107);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox10.TabIndex = 20;
             pictureBox10.TabStop = false;
@@ -443,10 +434,9 @@
             // 
             pictureBox11.BackColor = Color.White;
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(922, 272);
-            pictureBox11.Margin = new Padding(3, 2, 3, 2);
+            pictureBox11.Location = new Point(1054, 363);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(106, 88);
+            pictureBox11.Size = new Size(121, 117);
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox11.TabIndex = 21;
             pictureBox11.TabStop = false;
@@ -455,10 +445,9 @@
             // 
             pictureBox12.BackColor = Color.White;
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(214, 436);
-            pictureBox12.Margin = new Padding(3, 2, 3, 2);
+            pictureBox12.Location = new Point(245, 581);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(105, 90);
+            pictureBox12.Size = new Size(120, 120);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 22;
             pictureBox12.TabStop = false;
@@ -467,10 +456,9 @@
             // 
             pictureBox13.BackColor = Color.White;
             pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
-            pictureBox13.Location = new Point(573, 446);
-            pictureBox13.Margin = new Padding(3, 2, 3, 2);
+            pictureBox13.Location = new Point(655, 595);
             pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(99, 81);
+            pictureBox13.Size = new Size(113, 108);
             pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox13.TabIndex = 23;
             pictureBox13.TabStop = false;
@@ -479,20 +467,19 @@
             // 
             pictureBox14.BackColor = Color.White;
             pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
-            pictureBox14.Location = new Point(922, 446);
-            pictureBox14.Margin = new Padding(3, 2, 3, 2);
+            pictureBox14.Location = new Point(1054, 595);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(99, 81);
+            pictureBox14.Size = new Size(113, 108);
             pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox14.TabIndex = 24;
             pictureBox14.TabStop = false;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(189, 226, 239);
-            ClientSize = new Size(1424, 845);
+            ClientSize = new Size(1627, 1055);
             Controls.Add(pictureBox14);
             Controls.Add(pictureBox13);
             Controls.Add(pictureBox12);
@@ -519,7 +506,6 @@
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox5);
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form2";
             Text = "Home";
             Load += Form2_Load;

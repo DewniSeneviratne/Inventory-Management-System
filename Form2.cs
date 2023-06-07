@@ -128,5 +128,12 @@ namespace Assignment_ES
             label7.BackColor = Color.White;
             pictureBox14.BackColor = Color.White;
         }
+
+        private void monitorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            this.Hide();
+            form4.Show();
+        }
     }
 }

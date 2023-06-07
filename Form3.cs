@@ -260,7 +260,7 @@ namespace Assignment_ES
                 string productName = textBox4.Text.ToString();
                 string productCode = textBox1.Text.ToString();
 
-                if (productName.Length == 0 || productCode.Length ==0)
+                if (productName.Length == 0 || productCode.Length == 0)
                 {
                     MessageBox.Show("No empty feilds allowed");
                 }
@@ -268,7 +268,7 @@ namespace Assignment_ES
                 {
 
                     mySqlConnection.Open();
-                    string query = "delete from products where product_code="+productCode+"";
+                    string query = "delete from products where product_code=" + productCode + "";
 
                     MySqlCommand cmd = new MySqlCommand(query, mySqlConnection);
                     cmd.ExecuteNonQuery();
@@ -282,7 +282,29 @@ namespace Assignment_ES
             {
                 MessageBox.Show(ex.Message);
             }
-        
+
+        }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monitorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            this.Hide();
+            form4.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void itemManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

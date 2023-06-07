@@ -134,23 +134,24 @@
             itemManagementToolStripMenuItem.Padding = new Padding(30, 10, 30, 10);
             itemManagementToolStripMenuItem.Size = new Size(267, 55);
             itemManagementToolStripMenuItem.Text = "Item Management";
+            itemManagementToolStripMenuItem.Click += itemManagementToolStripMenuItem_Click;
             // 
             // aToolStripMenuItem
             // 
             aToolStripMenuItem.Name = "aToolStripMenuItem";
-            aToolStripMenuItem.Size = new Size(183, 36);
+            aToolStripMenuItem.Size = new Size(224, 36);
             aToolStripMenuItem.Text = "Add";
             // 
             // bToolStripMenuItem
             // 
             bToolStripMenuItem.Name = "bToolStripMenuItem";
-            bToolStripMenuItem.Size = new Size(183, 36);
+            bToolStripMenuItem.Size = new Size(224, 36);
             bToolStripMenuItem.Text = "Update";
             // 
             // cToolStripMenuItem
             // 
             cToolStripMenuItem.Name = "cToolStripMenuItem";
-            cToolStripMenuItem.Size = new Size(183, 36);
+            cToolStripMenuItem.Size = new Size(224, 36);
             cToolStripMenuItem.Text = "Remove";
             // 
             // suppliersToolStripMenuItem
@@ -193,12 +194,14 @@
             monitorToolStripMenuItem.Padding = new Padding(30, 10, 30, 10);
             monitorToolStripMenuItem.Size = new Size(160, 55);
             monitorToolStripMenuItem.Text = "Monitor";
+            monitorToolStripMenuItem.Click += monitorToolStripMenuItem_Click;
             // 
             // searchToolStripMenuItem
             // 
             searchToolStripMenuItem.Name = "searchToolStripMenuItem";
             searchToolStripMenuItem.Size = new Size(225, 36);
             searchToolStripMenuItem.Text = "Search";
+            searchToolStripMenuItem.Click += searchToolStripMenuItem_Click;
             // 
             // outOfStockToolStripMenuItem
             // 
@@ -244,6 +247,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 10;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // label5
             // 
