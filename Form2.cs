@@ -144,5 +144,17 @@ namespace Assignment_ES
             this.Hide();
             form5.Show();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Form7 form7 = new Form7();
+            this.Hide();
+            form7.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

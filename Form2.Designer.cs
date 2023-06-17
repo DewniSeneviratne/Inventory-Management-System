@@ -274,6 +274,7 @@
             label3.TabIndex = 7;
             label3.Text = "Total Suppliers\r\n10";
             label3.TextAlign = ContentAlignment.TopCenter;
+            label3.Click += label3_Click;
             label3.MouseLeave += label3_MouseLeave;
             label3.MouseHover += label3_MouseHover;
             // 
@@ -316,6 +317,7 @@
             label6.TabIndex = 10;
             label6.Text = "Out Of Stocks\r\n 2";
             label6.TextAlign = ContentAlignment.TopCenter;
+            label6.Click += label6_Click;
             label6.MouseLeave += label6_MouseLeave;
             label6.MouseHover += label6_MouseHover;
             // 
