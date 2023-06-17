@@ -306,5 +306,12 @@ namespace Assignment_ES
         {
 
         }
+
+        private void suppliersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 f5 = new Form5();
+            this.Hide();
+            f5.Show();
+        }
     }
 }

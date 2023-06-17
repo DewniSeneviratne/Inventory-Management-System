@@ -58,6 +58,7 @@
             dataGridView1 = new DataGridView();
             pictureBox7 = new PictureBox();
             dataGridView2 = new DataGridView();
+            dataGridView3 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -68,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             SuspendLayout();
             // 
             // pictureBox3
@@ -133,19 +135,19 @@
             // aToolStripMenuItem
             // 
             aToolStripMenuItem.Name = "aToolStripMenuItem";
-            aToolStripMenuItem.Size = new Size(224, 36);
+            aToolStripMenuItem.Size = new Size(183, 36);
             aToolStripMenuItem.Text = "Add";
             // 
             // bToolStripMenuItem
             // 
             bToolStripMenuItem.Name = "bToolStripMenuItem";
-            bToolStripMenuItem.Size = new Size(224, 36);
+            bToolStripMenuItem.Size = new Size(183, 36);
             bToolStripMenuItem.Text = "Update";
             // 
             // cToolStripMenuItem
             // 
             cToolStripMenuItem.Name = "cToolStripMenuItem";
-            cToolStripMenuItem.Size = new Size(224, 36);
+            cToolStripMenuItem.Size = new Size(183, 36);
             cToolStripMenuItem.Text = "Remove";
             // 
             // suppliersToolStripMenuItem
@@ -154,6 +156,7 @@
             suppliersToolStripMenuItem.Padding = new Padding(30, 10, 30, 10);
             suppliersToolStripMenuItem.Size = new Size(173, 55);
             suppliersToolStripMenuItem.Text = "Suppliers";
+            suppliersToolStripMenuItem.Click += suppliersToolStripMenuItem_Click;
             // 
             // reportsToolStripMenuItem
             // 
@@ -255,6 +258,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 21;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // label1
             // 
@@ -355,12 +359,36 @@
             dataGridView2.Size = new Size(1272, 543);
             dataGridView2.TabIndex = 30;
             // 
+            // dataGridView3
+            // 
+            dataGridView3.AllowUserToAddRows = false;
+            dataGridView3.AllowUserToDeleteRows = false;
+            dataGridView3.AllowUserToResizeColumns = false;
+            dataGridView3.AllowUserToResizeRows = false;
+            dataGridView3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView3.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView3.BackgroundColor = Color.White;
+            dataGridView3.BorderStyle = BorderStyle.None;
+            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView3.GridColor = Color.White;
+            dataGridView3.Location = new Point(112, 323);
+            dataGridView3.Name = "dataGridView3";
+            dataGridView3.ReadOnly = true;
+            dataGridView3.RowHeadersVisible = false;
+            dataGridView3.RowHeadersWidth = 51;
+            dataGridView3.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridView3.RowTemplate.Height = 29;
+            dataGridView3.ShowEditingIcon = false;
+            dataGridView3.Size = new Size(1272, 521);
+            dataGridView3.TabIndex = 31;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(189, 226, 239);
             ClientSize = new Size(1627, 1055);
+            Controls.Add(dataGridView3);
             Controls.Add(dataGridView2);
             Controls.Add(pictureBox7);
             Controls.Add(dataGridView1);
@@ -390,6 +418,7 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -425,5 +454,6 @@
         private DataGridView dataGridView1;
         private PictureBox pictureBox7;
         private DataGridView dataGridView2;
+        private DataGridView dataGridView3;
     }
 }

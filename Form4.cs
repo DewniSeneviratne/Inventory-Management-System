@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Google.Protobuf.WellKnownTypes;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,20 @@ namespace Assignment_ES
             textBox1.Size = new Size(327, 51);
             textBox1.AutoSize = false;
             loadData();
+            dataGridView1.Show();
+            dataGridView2.Hide();
+            dataGridView3.Hide();
+            label1.Show();
+            textBox1.Show();
+            pictureBox6.Show();
+            pictureBox7.Show();
+            dataGridView1.DefaultCellStyle.Font = new Font("Arial", 13);
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 13);
+            dataGridView2.DefaultCellStyle.Font = new Font("Arial", 13);
+            dataGridView2.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 13);
+            dataGridView3.DefaultCellStyle.Font = new Font("Arial", 13);
+            dataGridView3.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 13);
+
         }
         public void loadData()
         {
@@ -70,6 +85,11 @@ namespace Assignment_ES
             button3rem.ForeColor = Color.White;
             dataGridView1.Show();
             dataGridView2.Hide();
+            dataGridView3.Hide();
+            label1.Show();
+            textBox1.Show();
+            pictureBox6.Show();
+            pictureBox7.Show();
         }
 
         private void button2up_Click(object sender, EventArgs e)
@@ -82,6 +102,11 @@ namespace Assignment_ES
             button3rem.ForeColor = Color.White;
             dataGridView1.Hide();
             dataGridView2.Show();
+            dataGridView3.Hide();
+            label1.Hide();
+            textBox1.Hide();
+            pictureBox6.Hide();
+            pictureBox7.Hide();
             var database = new Database();
             if (database.connect_db())
             {
@@ -115,6 +140,39 @@ namespace Assignment_ES
             button1add.ForeColor = Color.White;
             button2up.BackColor = System.Drawing.ColorTranslator.FromHtml("#00ABB2");
             button2up.ForeColor = Color.White;
+            dataGridView1.Hide();
+            dataGridView2.Hide();
+            dataGridView3.Show();
+            label1.Hide();
+            textBox1.Hide();
+            pictureBox6.Hide();
+            pictureBox7.Hide();
+
+            var database = new Database();
+            DateTime currentDate = DateTime.Now;
+            string date = currentDate.ToString("yyyy-MM-dd");
+            if (database.connect_db())
+            {
+                string query = "select stocks.product_code, products.product_name, products.manufacturer, stocks.selling_price, stocks.exp_date, stocks.quantity from stocks, products where stocks.product_code=products.product_code && stocks.exp_date< '" + date + "' ";
+                MySqlCommand mySqlCommand = new MySqlCommand(query);
+                mySqlCommand.Connection = database.mySqlConnection;
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                adapter.SelectCommand = mySqlCommand;
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = dt;
+
+                dataGridView3.DataSource = bindingSource;
+
+                database.close_db();
+
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -193,6 +251,18 @@ namespace Assignment_ES
         private void monitorToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void suppliersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 f5 = new Form5();
+            this.Hide();
+            f5.Show();
         }
     }
 }

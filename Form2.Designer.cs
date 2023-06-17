@@ -139,6 +139,7 @@
             suppliersToolStripMenuItem.Padding = new Padding(30, 10, 30, 10);
             suppliersToolStripMenuItem.Size = new Size(173, 55);
             suppliersToolStripMenuItem.Text = "Suppliers";
+            suppliersToolStripMenuItem.Click += suppliersToolStripMenuItem_Click;
             // 
             // reportsToolStripMenuItem
             // 
