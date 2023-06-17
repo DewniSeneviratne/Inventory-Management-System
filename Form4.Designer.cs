@@ -254,7 +254,7 @@
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(112, 206);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(1272, 823);
+            pictureBox5.Size = new Size(1272, 759);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 21;
             pictureBox5.TabStop = false;
@@ -321,7 +321,7 @@
             dataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.ShowEditingIcon = false;
-            dataGridView1.Size = new Size(1272, 568);
+            dataGridView1.Size = new Size(1272, 543);
             dataGridView1.TabIndex = 0;
             // 
             // pictureBox7
